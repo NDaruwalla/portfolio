@@ -28,7 +28,15 @@ body {
   justify-content: flex-start;
  } 
 
+h2 {
+  font-size: 1em;
+  font-weight: bold;
+}
 
+p {
+  font-size: .75em;
+  font-weight: normal;
+}
 
 header {
   padding: 40px;
@@ -75,6 +83,12 @@ section {
 
 img {
   width: 100%;
+  opacity: .5;
+  }
+
+img:hover {
+  width: 100%;
+  opacity: 1;
 }
 
 footer {
