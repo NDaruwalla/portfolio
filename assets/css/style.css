@@ -26,30 +26,50 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-}
+ } 
+
+
 
 header {
   padding: 40px;
   text-align: center;
-  background: white;
+  background: none;
   color: black;
+}
+
+.name {
+  letter-spacing: 1em;
+  font-size: 3em;
+   }
+
+.modern {
+   letter-spacing: .5em;
+   font-size: 2em;
+   padding-top: .5em;
+    }
+
+span {
+  color: darkgrey;
+  font-style: italic;
 }
 
 nav {
   display: flex;
-  background-color: white;
+  background-color: none;
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 section {
-  flex: 0 0 600px;
-  background-color: white;
-  padding: 20px;
+  flex: 0 0 300px;
+  background-color: none;
+  padding: 10px;
   text-align: center;
 }
 
@@ -61,14 +81,15 @@ footer {
   flex-shrink: 0;
   padding: 20px;
   text-align: center;
-  background: white;
+  background: none;
   color: black;
   margin-top: auto;
+  font-size: .75em;
 }
 
 /* padding and styling for project images */
 .project {
-  padding: 20px 10px;
+  padding: 10px 10px;
   border: none;
   background-color: none;
 }
@@ -81,11 +102,12 @@ footer {
     flex-direction: column;
   }
   header {
-    background: white;
+    background: none;
   }
   nav,
   footer {
-    background-color: white;
+    background-color: none;
+    
   }
 }
 
