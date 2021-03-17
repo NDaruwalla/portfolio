@@ -61,7 +61,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 120vh;
-  justify-content: flex-start;
+  justify-content: center;
   background-color: var(--ltModeColor2);
  } 
 
@@ -105,7 +105,7 @@ p {
 
  /*styles project images   border: thin solid darkgrey;*/
 img {
-  width: 190px;
+  width: 200px;
   height: auto;
   opacity: .75;
   border: 20px;
