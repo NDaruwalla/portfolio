@@ -5,8 +5,6 @@
 	font-family: inherit;
 	font-style: inherit;
 	font-size: 100%;
-	border: 0 none;
-	outline: 0;
 	padding: 0;
 	margin: 0;
 	}
@@ -29,6 +27,8 @@
   */
 }
 
+
+/* style for body*/
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -39,16 +39,19 @@ body {
   background-color: var(--ltModeColor2);
  } 
 
+ /* style for h2 elements used for project title*/
 h2 {
   font-size: 1em;
   font-weight: bold;
 }
 
+ /* style for paragraph elements used for project descriptions*/
 p {
   font-size: .75em;
   font-weight: normal;
 }
 
+ /* style for header used for project descriptions*/
 header {
   padding: 40px;
   text-align: center;
@@ -56,6 +59,7 @@ header {
   color: var(--ltModeColor1);
 }
 
+ /* classes used to style header Nicole Daruwalla and Modern Web Designs*/
 .name {
   font-family: 'PT Sans', sans-serif;
   letter-spacing: .65em;
@@ -68,78 +72,67 @@ header {
    padding-top: .5em;
     }
 
+/* styles the word "web" in Modern Web Designs in header*/
+span {
+  color: var(--ltModeColor3);
+  font-style: italic;
+    }
+
+/* class used to style call to action statement "Let's work together", email, linkedin */
 .action {
   font-size: 1.5em;
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 15px;
   width: 100%;
   text-align: center;
 }
 
-.button {
-  opacity: 1;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-
- }
-
-span {
-  color: var(--ltModeColor3);
-  font-style: italic;
-}
-
+/*styles main content in body to enable responsive design (flexbox settings)*/
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-left: 30%;
   margin-right: 30%;
+  margin-bottom: 2%;
  }
 
+ /*styles sections in body*/
 section {
-  flex: 0 0 245px;
-  background-color: none;
+  flex: 0 0 220px;
   padding:  0;
   text-align: center;
 }
 
+/* styling for sections */
+.project {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 80%;
+  background-color: none;
+}
+
+ /*styles project images*/
 img {
-  width: 200px;
+  width: 190px;
   height: auto;
   opacity: .75;
-    }
+  border: 20px;
+  border-color: blue;
+     }
 
+/*styles hover for project images*/
 img:hover {
   opacity: 1;
-  border: green;
-  border-width: 10px;
   }
 
-  /*
-#imgBorder {
-border-color: darkgrey;
-border-width: 10px;
-}
-*/
-
+/*styles the mail envelope for email link */
 .icon {
-  width: 100%;
+  width: 50px;
   opacity: 1;
  }
 
-
- /*
- .icon:hover {
-  width: 100%;
-  opacity: 1;
-  background-image: url("./assets/images/mailhover.png");
- }
- */
- 
+ /*footer styling */
 footer {
   flex-shrink: 0;
   padding: 20px;
@@ -150,10 +143,3 @@ footer {
   font-size: 1em;
 }
 
-/* padding and styling for project images */
-.project {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  max-width: 80%;
-  background-color: none;
-}
