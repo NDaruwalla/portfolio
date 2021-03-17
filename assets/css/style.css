@@ -11,7 +11,7 @@
 
 /* css reset above from https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/ */
 
-/*<a target="_blank" href="https://icons8.com/icons/set/cyprus-flag">Cyprus Flag icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>*/
+/* credit for envelope icon used for email link: <a target="_blank" href="https://icons8.com/icons/set/cyprus-flag">Cyprus Flag icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>*/
 
 /*set variables for light and dark mode*/
 :root {
@@ -26,32 +26,8 @@
   */
 }
 
-
-/* style for body*/
-body {
-  font-family: Arial, Helvetica, sans-serif; 
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 120vh;
-  justify-content: flex-start;
-  background-color: var(--ltModeColor2);
- } 
-
- /* style for h2 elements used for project titles*/
-h2 {
-  font-size: 1em;
-  font-weight: normal;
-}
-
- /* style for paragraph elements used for project descriptions*/
-p {
-  font-size: .75em;
-  font-weight: normal;
-}
-
  /* style for header used for project descriptions*/
-header {
+ header {
   padding: 40px;
   text-align: center;
   background: none;
@@ -77,14 +53,17 @@ span {
   font-style: italic;
     }
 
-/* class used to style call to action statement "Let's work together", email, linkedin */
-.action {
-  font-size: 1.5em;
-  padding-top: 20px;
-  padding-bottom: 15px;
-  width: 100%;
-  text-align: center;
-}
+
+  /* style for body*/
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 120vh;
+  justify-content: flex-start;
+  background-color: var(--ltModeColor2);
+ } 
 
 /*styles main content in body to enable responsive design (flexbox settings)*/
 main {
@@ -96,8 +75,21 @@ main {
   margin-bottom: 2%;
  }
 
+ /* style for h2 elements used for project titles*/
+h2 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+ /* style for paragraph elements used for project descriptions*/
+p {
+  font-size: .75em;
+  font-weight: normal;
+}
+
+
  /*styles sections in body*/
-section {
+ section {
   flex: 0 0 200px;
   padding:  1%;
   text-align: left;
@@ -121,11 +113,20 @@ img {
        }
 
 
-
 /*styles hover for project images*/
 img:hover {
   opacity: 1;
     }
+
+/* class used to style call to action statement "Let's work together", email, linkedin */
+.action {
+  font-size: 1.5em;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
 
 /*styles the mail envelope for email link */
 .icon {
