@@ -16,7 +16,7 @@ HTML, CSS, flexbox, media queries, and CSS variables.
 ## User Story
 
 ```
-AS AN potential employer/hiring manager
+AS a potential employer/hiring manager
 I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ```
