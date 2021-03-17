@@ -90,7 +90,7 @@ p {
 
  /*styles sections in body*/
  section {
-  flex: 0 0 200px;
+  flex: 0 0 32%;
   padding:  1%;
   text-align: left;
 }
@@ -105,7 +105,7 @@ p {
 
  /*styles project images   border: thin solid darkgrey;*/
 img {
-  width: 200px;
+  width: 100%;
   height: auto;
   opacity: .75;
   border: 20px;
