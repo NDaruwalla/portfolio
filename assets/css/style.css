@@ -11,21 +11,32 @@
 	margin: 0;
 	}
 
-/* css reset from https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/ */
+/* css reset above from https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/ */
 /*background image credit (darkmode): <a href="https://www.freepik.com/photos/vintage">Vintage photo created by benzoix - www.freepik.com</a>*/
-/* background image credit (lightmode): <a href='https://www.freepik.com/photos/vintage'>Vintage photo created by benzoix - www.freepik.com</a> */
-/*image placeholders - project 1-6: <a href='https://www.freepik.com/photos/dog'>Dog photo created by jcomp - www.freepik.com</a> */
+/*image placeholders: <a href='https://www.freepik.com/photos/dog'>Dog photo created by jcomp - www.freepik.com</a> */
+/*<a target="_blank" href="https://icons8.com/icons/set/cyprus-flag">Cyprus Flag icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>*/
 
+/*set variables for light and dark mode*/
+:root {
+  --ltModeColor1: black;
+  --ltModeColor2: white; 
+  --ltModeColor3: darkgrey;
 
-
+  /*
+  --dkModeColor1: #8FAADC;
+  --dkModeColor2: #222A35;
+  --dkModeColor3: #a5a5a5;
+  */
+}
 
 body {
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 120vh;
   justify-content: flex-start;
+  background-color: var(--ltModeColor2);
  } 
 
 h2 {
@@ -42,13 +53,14 @@ header {
   padding: 40px;
   text-align: center;
   background: none;
-  color: black;
+  color: var(--ltModeColor1);
 }
 
 .name {
-  letter-spacing: 1em;
-  font-size: 3em;
-   }
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: .65em;
+  font-size: 3.25em;
+     }
 
 .modern {
    letter-spacing: .5em;
@@ -56,72 +68,92 @@ header {
    padding-top: .5em;
     }
 
-span {
-  color: darkgrey;
-  font-style: italic;
+.action {
+  font-size: 1.5em;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  width: 100%;
+  text-align: center;
 }
 
-nav {
-  display: flex;
-  background-color: none;
+.button {
+  opacity: 1;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+
+ }
+
+span {
+  color: var(--ltModeColor3);
+  font-style: italic;
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 25%;
-  margin-right: 25%;
-}
+  margin-left: 30%;
+  margin-right: 30%;
+ }
 
 section {
-  flex: 0 0 300px;
+  flex: 0 0 245px;
   background-color: none;
-  padding: 10px;
+  padding:  0;
   text-align: center;
 }
 
 img {
-  width: 100%;
-  opacity: .5;
-  }
+  width: 200px;
+  height: auto;
+  opacity: .75;
+    }
 
 img:hover {
+  opacity: 1;
+  border: green;
+  border-width: 10px;
+  }
+
+  /*
+#imgBorder {
+border-color: darkgrey;
+border-width: 10px;
+}
+*/
+
+.icon {
   width: 100%;
   opacity: 1;
-}
+ }
 
+
+ /*
+ .icon:hover {
+  width: 100%;
+  opacity: 1;
+  background-image: url("./assets/images/mailhover.png");
+ }
+ */
+ 
 footer {
   flex-shrink: 0;
   padding: 20px;
   text-align: center;
-  background: none;
-  color: black;
+  background-color: var(--ltModeColor2);
+  color: var(--ltModeColor1);
   margin-top: auto;
-  font-size: .75em;
+  font-size: 1em;
 }
 
 /* padding and styling for project images */
 .project {
-  padding: 10px 10px;
-  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 80%;
   background-color: none;
 }
-
-
-
-@media screen and (max-width: 768px) {
-  main,
-  nav {
-    flex-direction: column;
-  }
-  header {
-    background: none;
-  }
-  nav,
-  footer {
-    background-color: none;
-    
-  }
-}
-
