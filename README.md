@@ -30,7 +30,7 @@ The following animation shows my web application's appearance and functionality:
 
 ## Key Features of this application
 * Potential employers can sample my previous work
-* Potential employers can view my name, a recent photo (visible via LinkedIn link), learn about me (via link to my personal landing page), view my projects, and contact me via email or LinkedIn.
+* Potential employers can view my name, a recent photo (visible via LinkedIn link), learn about me (via link to my personal landing page), view my projects, and contact me via email or LinkedIn
 * The UI scrolls to the corresponding section
 * When the projects link is clicked the UI scrolls to the section with titled images of my applications
 * The first application's  application's image is larger in size than the others
@@ -38,12 +38,14 @@ The following animation shows my web application's appearance and functionality:
 * The page is responsive to various screens and devices and the layout adapts to various viewports
 
 
-## URL to deployed application
+## Deployed application
 
-* The URL of the deployed application.
+The URL of the deployed application.
 https://ndaruwalla.github.io/portfolio/
 
-* The URL of the GitHub repository that contains my code.
+## GitHub repository
+
+The URL of the GitHub repository that contains my code.
 https://github.com/NDaruwalla/portfolio/
 
 
