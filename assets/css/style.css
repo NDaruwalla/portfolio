@@ -78,14 +78,15 @@ main {
  /* style for h2 elements used for project titles*/
 h2 {
   font-size: 1em;
-  font-weight: normal;
+  font-weight: bold;
 }
 
  /* style for paragraph elements used for project descriptions*/
 p {
   font-size: .75em;
+  line-height: 1.45;
   font-weight: normal;
-}
+ }
 
 
  /*styles sections in body*/
@@ -97,7 +98,7 @@ p {
 
 /* styling for sections */
 .project {
-  padding-top: 10px;
+  padding-top:10px;
   padding-bottom: 10px;
   max-width: 100%;
   background-color: none;
