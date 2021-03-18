@@ -89,7 +89,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 120vh;
+  min-height: 500vh;
   justify-content: center;
   background-color: var(--ltModeColor2);
  } 
@@ -117,6 +117,11 @@ p {
   font-weight: normal;
  }
 
+ /*first child larger
+
+ div:first-child {
+  width: 110%;
+ } */
 
  /*styles sections in body*/
  section {
@@ -146,8 +151,7 @@ img {
 /*styles hover for project images*/
 img:hover {
   opacity: 1;
-  width: 110%;
-  margin-right: 5%;
+ 
     }
 
 #portrait {
@@ -168,8 +172,7 @@ img:hover {
   padding-bottom: 15px;
   width: 100%;
   text-align: center;
-  
-} */
+  } */
 
 /* class used to style call to action statement "Let's work together", email, linkedin */
 .action {

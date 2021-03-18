@@ -36,6 +36,7 @@ The following animation shows my web application's appearance and functionality:
 * Upon hover the application's image is larger in size than the others
 * When the application image is clicked the deployed application renders in the browser
 * The page is responsive to various screens and devices and the layout adapts to various viewports
+* A favicon is displayed in the browser tab
 
 
 ## Deployed application
