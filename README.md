@@ -30,10 +30,10 @@ The following animation shows my web application's appearance and functionality:
 
 ## Key Features of this application
 * Potential employers can sample my previous work
-* Potential employers can view my name, a recent photo (visible via LinkedIn link), learn about me (via link to my personal landing page), view my projects, and contact me via email or LinkedIn
+* Potential employers can view my name, a recent photo, learn about me, view my projects, and contact me via email or LinkedIn
 * The UI scrolls to the corresponding section
-* When the projects link is clicked the UI scrolls to the section with titled images of my applications
-* The first application's  application's image is larger in size than the others
+* When the My Work link is clicked the UI scrolls to the section with titled images of my applications
+* Upon hover the application's image is larger in size than the others
 * When the application image is clicked the deployed application renders in the browser
 * The page is responsive to various screens and devices and the layout adapts to various viewports
 

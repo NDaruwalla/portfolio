@@ -6,14 +6,14 @@
 
 <head>
   <title>Nicole Daruwalla - Web Designer & Developer</title>
-     <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
- 
-  </head>
+
+</head>
 
 <body>
   <header>
@@ -21,10 +21,19 @@
     <br />
     <p class="modern">modern<span>web</span>designs</p>
     <br />
+
+    <nav>
+      <div class="topnav">
+        <a class="active" href="#myWork">My Work</a>
+        <a href="#aboutMe">About Me</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
   </header>
 
   <main>
-    <section>
+    <section id="myWork">
       <div class="project">
         <h2>Shark Attack</h2>
         <p>Algorithms in Scratch.</p>
@@ -44,7 +53,7 @@
       </div>
     </section>
 
-      <section>
+    <section>
       <div class="project">
         <h2>Fan Page</h2>
         <p>Celebrating Charlie Parker.</p>
@@ -85,10 +94,34 @@
     </section>
   </main>
 
-  <section>
+  <hr />
+
+  <section id="aboutMe">
+    <div class="action">
+      <h2>About Me</h2>
+       <p>I'm a website developer with a passion for creating exceptional end user experiences. My goal is to delight end
+      users and drive business results. When I'm not creating web applications, I enjoy creative writing, photography,
+      playing the alto saxophone, and hiking with my husband and son.</p>
+    </div>
+
+      <div>
+      <img id="portrait" src="assets/images/me.jpg" alt="Nicole Daruwalla">
+    </div>
+    
+
+  </section>
+
+  <section id="contact">
+    <div class="action">
+      <h2>Contact</h2>
+      <p>Let's work together.</p>
+    </div>
+  </section>
+
+  <!-- <section>
   <div class="action">
     <p>Let's work together.</p>
-  </div>
+  </div> -->
 
   <div class="action">
     <a href="mailto:nicole.daruwalla@gmail.com">
@@ -96,13 +129,13 @@
     </a>
   </div>
 
-  <div class="action"> 
+  <div class="action">
     <p>
       <a href="https://www.linkedin.com/in/nicoledaruwalla/"><img src="assets/images/linkedinlogo.png"
           title="View resume on LinkedIn" alt="LinkedIn profile" style="width:52px;"></a>
     </p>
   </div>
- </section>
+  </section>
 
 
   <footer>
