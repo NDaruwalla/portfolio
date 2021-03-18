@@ -10,7 +10,7 @@ I created a webpage for potential employers to sample the work I have created. I
  To obtain an interview with a potential employer.
 
 ## Skills Hightlighted
-HTML, CSS, flexbox, media queries, and CSS variables. 
+HTML, CSS, flexbox, media queries, and CSS variables.  
 
 
 ## User Story
@@ -19,7 +19,11 @@ HTML, CSS, flexbox, media queries, and CSS variables.
 AS a potential employer/hiring manager
 I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+
 ```
+## Wireframe
+
+A wireframe document was created in PowerPoint. See attached PDF.
 
 ## Screen Capture
 
