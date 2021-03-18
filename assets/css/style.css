@@ -28,7 +28,7 @@
 
  /* style for header used for project descriptions*/
  header {
-  padding: 40px;
+  padding: 2rem;
   text-align: center;
   background: none;
   color: var(--ltModeColor1);
@@ -54,7 +54,6 @@ span {
     }
 
 /* navigation style*/
-/* Adds a black background color to the top navigation */
 .topnav {
   background-color:var(--ltModeColor3);
   overflow: hidden;
@@ -94,16 +93,21 @@ body {
   background-color: var(--ltModeColor2);
  } 
 
-/*styles main content in body to enable responsive design (flexbox settings)*/
-main {
+ .container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-bottom: 2%;
- }
+  justify-content: center;
+  align-content: center;
+  margin: 0 20%;
+  }
 
+.item {
+  align-self: center;
+  margin: .75rem;
+  }
+
+  
  /* style for h2 elements used for project titles*/
 h2 {
   font-size: 1em;
@@ -117,26 +121,6 @@ p {
   font-weight: normal;
  }
 
- /*first child larger
-
- div:first-child {
-  width: 110%;
- } */
-
- /*styles sections in body*/
- section {
-  flex: 0 0 32%;
-  padding:  1%;
-  text-align: left;
-}
-
-/* styling for sections */
-.project {
-  padding-top:10px;
-  padding-bottom: 10px;
-  max-width: 100%;
-  background-color: none;
-}
 
  /*styles project images   border: thin solid darkgrey;*/
 img {
@@ -164,15 +148,6 @@ img:hover {
   margin-right: 42%;
  }
 
-/*.aboutContact {
-  font-size: 1.5em;
-  padding-top: 20px;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-bottom: 15px;
-  width: 100%;
-  text-align: center;
-  } */
 
 /* class used to style call to action statement "Let's work together", email, linkedin */
 .action {
