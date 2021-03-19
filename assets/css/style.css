@@ -176,3 +176,29 @@ footer {
   font-size: 1em;
 }
 
+/* from W3schools.com -  On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+ }
+
+ 
+@media screen and (min-width: 400px) {
+  body {
+    background-color: rgb(163, 205, 233);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: rgb(227, 233, 152);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: white;
+  }
+}

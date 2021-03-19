@@ -4,7 +4,7 @@
 
 ## Description
 
-I created a webpage for potential employers to sample the work I have created. I'll use the currently linked projects as placeholders until I have completed more advanced projects to showcase my skills. 
+I developed a webpage for potential employers to sample the work I have created. I'll use the currently linked projects as placeholders until I have completed more advanced projects to showcase my skills. 
 
 ## Objective
  To obtain an interview with a potential employer.
