@@ -183,22 +183,68 @@ footer {
     width: 100%;
   }
  }
-
  
 @media screen and (min-width: 400px) {
   body {
     background-color: rgb(163, 205, 233);
   }
-}
+
+  header {
+    padding: 2rem;
+    text-align: center;
+    background: none;
+    color: var(--ltModeColor1);
+  }
+
+  .name {
+      letter-spacing: .325em;
+    font-size: 1.625em;
+       }
+
+    .modern {
+        letter-spacing: .25em;
+        font-size: 1em;
+        padding-top: .25em;
+         }
+  
+ }
 
 @media screen and (min-width: 600px) {
   body {
     background-color: rgb(227, 233, 152);
   }
-}
+
+  header {
+    padding: 2rem;
+    text-align: center;
+    background: none;
+    color: var(--ltModeColor1);
+  }
+
+  .name {
+    letter-spacing: .48em;
+    font-size: 2.43em;
+       }
+  
+    .modern {
+        letter-spacing: .375em;
+        font-size: 1.5em;
+        padding-top: .375em;
+         }
 
 @media screen and (min-width: 800px) {
   body {
     background-color: white;
   }
+
+  .name {
+    letter-spacing: .65em;
+    font-size: 3.25em;
+       }
+  
+  .modern {
+     letter-spacing: .5em;
+     font-size: 2em;
+     padding-top: .5em;
+      }
 }
