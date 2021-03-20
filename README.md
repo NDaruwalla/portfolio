@@ -29,7 +29,7 @@ A wireframe document was created in PowerPoint. See attached PDF.
 
 The following animation shows my web application's appearance and functionality:
 
-![portfolio demo](./assets/images/portfoliopage.png)
+![portfolio demo](./assets/images/portfoliopage.jpg)
 
 
 ## Key Features of this application
