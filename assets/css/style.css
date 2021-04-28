@@ -162,13 +162,13 @@ img:hover {
 }
 
 .paraFormat {
-  font-size:  1em;
+  font-size: 1em;
   line-height: 1em;
   padding-top: .5em;
   padding-bottom: .5em;
   margin: auto;
   width: 45%;
- }
+}
 
 
 
@@ -229,7 +229,7 @@ footer {
 
 @media screen and (min-width: 600px) {
   body {
-    background-color:  rgb(241, 214, 228);
+    background-color: rgb(241, 214, 228);
   }
 
   header {
@@ -252,7 +252,7 @@ footer {
 
   footer {
     text-align: center;
-    background-color:  rgb(241, 214, 228);
+    background-color: rgb(241, 214, 228);
     margin: auto;
     font-size: 1em;
   }
@@ -275,7 +275,7 @@ footer {
 
     footer {
       text-align: center;
-      background-color:  white;
+      background-color: white;
       margin: auto;
       font-size: 1em;
     }

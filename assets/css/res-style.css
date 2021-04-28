@@ -2,101 +2,113 @@
   color: rgb(34, 13, 13);
   display: grid;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: .15fr .15fr .5fr .5fr .15fr .15fr .15fr .15fr;
+  grid-template-rows: auto;
+  /* grid-template-rows: 0.15fr 0.15fr 0.5fr 0.5fr 0.15fr 0.15fr 0.15fr 0.15fr; */
   box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
   grid-gap: 1px;
-  grid-template-areas: 
+  grid-template-areas:
     "name name"
     "about about"
     "technology skills"
-    "technology skills" 
+    "technology skills"
     "experience  experience"
     "education   education"
-    "certifications social";
+    "certifications social"
+    "return  return";
 }
 
 body {
-    font-size: 1rem;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: rgb(34, 13, 13);
-    background-color: rgb(34, 13, 13);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+  font-size: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: rgb(34, 13, 13);
+  background-color: rgb(34, 13, 13);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .address {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .icon2 {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .grid-area {
-  padding: .5em 4em 1em 4em;
+  padding: 0.5em 4em 1em 4em;
 
-  border : 1px rgb(34, 13, 13);
+  border: 1px rgb(34, 13, 13);
   background-color: rgb(252, 252, 252);
 }
 
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.25em;
+  line-height: 0.5em;
+  margin-bottom: 0;
+}
 
-
- h1 {
-   font-family: 'Montserrat', sans-serif;
-   font-size: 3.25em;
-   line-height: .5em;
-   margin-bottom: 0;
- }
-
- h2 {
-  font-family: 'Montserrat', sans-serif;
+h2 {
+  font-family: "Montserrat", sans-serif;
   font-size: 2em;
- }
+}
 
 .name {
-    grid-area : name;
-    text-align: center;
-  }
-  
+  grid-area: name;
+  text-align: center;
+}
+
 .about {
-    grid-area : about;
-    font-size: 1.25rem;
-  }
+  grid-area: about;
+  font-size: 1.25rem;
+}
 
 .projects {
-    grid-area : projects;
-  }
+  grid-area: projects;
+}
 
 .technology {
-    grid-area : technology;
-  }
+  grid-area: technology;
+}
 
 .experience {
-    grid-area : experience;
-  }
+  grid-area: experience;
+}
 
 .education {
-    grid-area : education;
-  }
+  grid-area: education;
+}
 
 .certifications {
-    grid-area : certifications;
-  }
+  grid-area: certifications;
+}
 
 .skills {
-    grid-area : skills;
-  }
+  grid-area: skills;
+}
 
 .social {
-    grid-area : social;
-  
-  }
+  grid-area: social;
+}
+
+.return {
+  grid-area: return;
+  width: auto;
+  text-align: center;
+  background-color: rgb(34, 13, 13)
+}
+
+.toTop a:link {
+  color: rgb(252, 252, 252);
+  background-color: transparent;
+  text-decoration: underline;
+}
 
 .wrapper {
-    padding        : 0;
-    display        : flex;
-    flex-direction : column;
-    justify-content: space-evenly;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .learning {
