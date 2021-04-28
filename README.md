@@ -36,8 +36,8 @@ The following screen capture shows my resume page appearance:
 
 
 ## Key Features of this application
-* Potential employers can sample my previous work
-* Potential employers can view my name, a recent photo, learn about me, view my projects, and contact me via email or LinkedIn
+* Potential employers can sample my previous work and view my resume
+* Potential employers can view my name, resume a recent photo, learn about me, view my projects, and contact me via email or LinkedIn
 * The UI scrolls to the corresponding section
 * When the My Work link is clicked the UI scrolls to the section with titled images of my applications
 * Upon hover the application's image is larger in size than the others
