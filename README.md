@@ -27,9 +27,12 @@ A wireframe document was created in PowerPoint. See attached PDF.
 
 ## Screen Capture
 
-The following animation shows my web application's appearance and functionality:
+The following screen capture shows my web portfolio's appearance and functionality:
+![portfolio](./assets/images/portfoliopage.jpg)
 
-![portfolio demo](./assets/images/portfoliopage.jpg)
+
+The following screen capture shows my resume page appearance:
+![resume](./assets/images/resume.jpg)
 
 
 ## Key Features of this application
