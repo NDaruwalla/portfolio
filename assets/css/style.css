@@ -482,20 +482,8 @@ footer p {
   
   /* Styles the links inside the navigation bar */
   .topnav a {
-    /* float: left;
-    color: var(--ltModeBkGrd);
-    text-align: center;
-    padding: .5rem .9rem;
-    text-decoration: none; */
     font-size: 1rem;
-  
-  }
-/* 
-  header {
-    padding: 2rem;
-    text-align: center;
-    background: none;
-  } */
+    }
 
   .name {
     letter-spacing: .325em;
@@ -531,7 +519,6 @@ footer p {
   .item p {
     font-size: 1rem;
     line-height: normal;
-
   }
 
   .about-me {
