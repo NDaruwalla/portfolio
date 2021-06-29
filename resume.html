@@ -7,13 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <title>NICOLE DARUWALLA - Resume</title>
+
     <link rel="stylesheet" type="text/css" href="./assets/css/res-style.css">
+    
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+
+
     <main class="wrapper">
         <article class="resume">
 
@@ -22,12 +27,21 @@
                 <h2>Website Designer & Developer</h2>
                 <address class="address">Milford, New Hampshire USA</address>
                 <address class="address">Mobile: 603-801-3789</address>
+                <br>
                 <a href="mailto:nicole.daruwalla@gmail.com">
-                    <img class="icon2" alt="envelop icon" src="assets/images/mail2.png">
-                </a>
+                    <img class="icon2" alt="envelope icon" src="assets/images/mail.png"></a>
 
+               <!-- resume button for print pdf -->
+                <div><input type="button" id="bt"  class="resumeBtn"
+                onclick="print('assets/daruwalla-resume.pdf')" 
+                    value="Print Resume"/>
+                </div>
 
-
+                <a href="index.html">Return to Homepage</a>
+               
+                <!-- </div> -->
+                <hr>
+                
             </section>
 
             <section class="grid-area about">
@@ -35,51 +49,55 @@
                     project management and organizational change management background. I am passionate about creating
                     clean, modern websites that delight end users and drive business results.</p>
                 <p class="intro">View my portfolio on <a href="https://ndaruwalla.github.io/portfolio/">GitHub.</a></p>
+                <hr>
+            </section>
+            <section
+                class="grid-area tools">
+                <h2>Technology & Tools</h2>
             </section>
 
             <section class="grid-area technology">
-                <h2>Technology</h2>
+             
                 <h3>Frontend (client-side)</h3>
                 <ul>
                     <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>CSS Frameworks: Bootstrap, Foundation</li>
-                    <li>JavaScript</li>
+                    <li>CSS3 (including grid and flexbox)</li>
+                    <li>CSS Frameworks: Bootstrap, Bulma</li>
+                    <li>JavaScript / ES6</li>
+                    <li>Visual Studio Code</li>
                     <li>
-                        Frameworks: JQuery (Library), <span class="learning">React JS (library), Angular.js, Vue.js,
-                            Laraval-PHP</span></li>
-                    <li><span class="learning">Wordpress</span></li>
+                        Frameworks: JQuery (Library), React JS (library), <span class="learning"></span>Angular.js</span></li>
                     <li>Visual Studio Code</li>
                 </ul>
-                <h3>Backend (server-side)</h3>
+
+                <h3>Frameworks / Libraries</h3>
                 <ul>
-                    <li><span class="learning">JavaScript-NodeJS</span></li>
-                    <li><span class="learning">PHP</span></li>
+                    <li>JQuery</li>
+                    <li>React</li>
+                    <li><span class="learning">Angular.js</span></li>
                 </ul>
 
-                <h3>Content Management Systems (CMS) Platforms</h3>
+                <h3>Backend (server-side)</h3>
                 <ul>
-                    <li><span class="learning">Wordpress</span></li>
-                    <li><span class="learning">WooCommerce</span></li>
-                    <li><span class="learning">Shopify</span></li>
+                    <li>JavaScript-NodeJS</li>
                 </ul>
+
+
+               
+            </section>
+            <section class="grid-area skills">
                 <h3>Databases</h3>
                 <ul>
-                    <li><span class="learning">MySQL</span></li>
-                    <li><span class="learning">NoSQL: MongoDB, Cassandra</span></li>
+                    <li>MySQL</li>
+                    <li>NoSQL: MongoDB</li>
                 </ul>
                 <h3>DevOps</h3>
                 <ul>
                     <li>Agile Methodology</li>
                     <li>Git, GitHub, GitLab</li>
-                    <li>Slack</li>
-                    <li>Zoom</li>
+                    <li>Slack, Zoom</li>
                 </ul>
-
-            </section>
-            <section class="grid-area skills">
-                <h2>Other Tools & Skills</h2>
-                <h3>Microsoft</h3>
+               <h3>Microsoft</h3>
                 <ul>
                     <li>Word</li>
                     <li>Excel</li>
@@ -94,20 +112,12 @@
                 <ul>
                     <li>Photoshop</li>
                     <li>Illustrator</li>
-                    <li><span class="learning">XD</span></li>
-                    <li><span class="learning">InDesign</span></li>
+                    <li>XD</li>
+                    <li>InDesign</li>
                 </ul>
-
-                <h3>Project Management Skills</h3>
-                <ul>
-                    <li>Communication</li>
-                    <li>Relationship building</li>
-                    <li>Teamwork / Collaboration</li>
-                    <li>Problem Solving</li>
-                    <li>Agile, Predictive (waterfall), and hybrid methodologies</li>
-                </ul>
-
             </section>
+          
+
             <section class="grid-area certifications">
                 <hr>
                 <hr>
@@ -151,6 +161,7 @@
                 </p>
 
             </section>
+          
             <section class="grid-area education">
                 <h2 id="education">Education</h2>
                 <h3>Full Stack Coding Certificate</h3>
@@ -202,7 +213,15 @@
         </article>
 
     </main>
-
+    <script>
+        function print(doc) {
+          var objFra = document.createElement('iframe');
+          objFra.style.visibility = 'hidden';
+          objFra.src = doc;                  
+          document.body.appendChild(objFra);
+          objFra.contentWindow.focus();  
+          objFra.contentWindow.print();  
+      }
+  </script>
 </body>
-
 </html>

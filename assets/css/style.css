@@ -15,9 +15,10 @@
 
 /*set variables for light and dark mode*/
 :root {
-  --ltModeColor1: rgb(63, 6, 6);
-  --ltModeColor2: rgb(252, 252, 252);
-  --ltModeColor3: rgb(34, 13, 13);
+  --ltModeTitle: #373737;
+  --ltModeBkGrd: #f4f4f4;
+  --ltModeNavBkg: #C0B283;
+  --ltModeAccent: #DCD0C0;
 
   /* alternate color scheme (dark)
   --dkModeColor1: #8FAADC;
@@ -28,58 +29,137 @@
 
 /* style for header used for project descriptions*/
 header {
-  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
   text-align: center;
-  background: none;
-  color: var(--ltModeColor1);
+  background-color: var(--ltModeBkGrd);
+  color: var(--ltModeNavBkg);
 }
 
 /* classes used to style header Nicole Daruwalla and Modern Web Designs*/
 .name {
   font-family: 'PT Sans', sans-serif;
   letter-spacing: .65em;
-  font-size: 3.25em;
+  font-size: 4.25em;
+  color: var(--ltModeTitle);
 }
 
 .modern {
   letter-spacing: .5em;
-  font-size: 2em;
+  font-size: 3em;
   padding-top: .5em;
+  padding-bottom: .5em;
+  color: var(--ltModeTitle);
 }
 
 /* styles the word "web" in Modern Web Designs in header*/
-span {
-  color: #a18383;
+.modern span {
+  color: var(--ltModeAccent);
   font-style: italic;
+  font-size: 1em;
 }
+
+/* styles the text words (not capital words) in ticker" in header*/
+.tickerText {
+  color: var(--ltModeAccent);
+  font-style: normal;
+  font-size: 1em;
+}
+
+/* styles the capital words in ticker" in header*/
+.tickerCaps span {
+  color: var(--ltModeNavBkg);
+  font-style: italic;
+  font-size: 1em;
+  letter-spacing: .5em;
+}
+
 
 /* navigation style*/
 .topnav {
-  background-color: var(--ltModeColor3);
+  background-color: var(--ltModeNavBkg);
   overflow: hidden;
 }
 
 /* Styles the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: var(--ltModeBkGrd);
   text-align: center;
   padding: .5rem .9rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.25rem;
+
 }
 
 /* Changes the color of links on hover */
 .topnav a:hover {
-  background-color: darkgrey;
-  color: black;
+  background-color: var(--ltModeTitle);
+  color: var(--ltModeAccent);
+  transition: 1s;
 }
 
 /* style for active/current link */
 .topnav a.active {
-  background-color: #a18383;
-  color: white;
+  background-color: var(--ltModeAccent);
+  color: var(--ltModeTitle);
 }
+
+/* TICKER STYLING */
+/* https://code-boxx.com/html-css-news-ticker-horizontal-vertical/#sec-horizontal */
+/* OUTER CONTAINER */
+.tcontainer {
+  width: 100%;
+  overflow: hidden;
+  /* Hide scroll bar */
+}
+
+/* MIDDLE CONTAINER */
+.ticker-wrap {
+  width: 100%;
+  padding-left: 0%;
+  /* Push contents to right side of screen */
+}
+
+/* INNER CONTAINER */
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-move {
+  /* Basically move items from right side of screen to left in infinite loop */
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 10%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 120s;
+}
+
+.ticker-move:hover {
+  animation-play-state: paused;
+  /* Pause scroll on mouse hover */
+
+}
+
+/* ITEMS */
+.ticker-item {
+  display: inline-block;
+  /* Lay items in a horizontal line */
+  padding: 0 2rem;
+  padding-top: 1.5rem;
+  font-size: 3rem;
+
+}
+
+/* END TICKER STYLING */
 
 
 /* style for body*/
@@ -90,7 +170,7 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 230vh;
-  background-color: var(--ltModeColor2);
+  background-color: var(--ltModeBkGrd);
 }
 
 .container {
@@ -100,112 +180,227 @@ body {
   justify-content: center;
   align-content: center;
   margin: 0 20%;
+  background-color: var(--ltModeBkGrd);
 }
 
 .item {
   align-self: center;
-  margin: .75rem;
+  margin: 2rem;
+
 }
 
-
-/* style for h2 elements used for project titles*/
-h2 {
-  font-size: 1em;
+/* style for h2 elements with class .item used for project titles*/
+.item h2 {
+  font-size: 1.25rem;
   font-weight: bold;
+  color: var(--ltModeNavBkg)
 }
 
-/* style for paragraph elements used for project descriptions*/
-p {
-  font-size: .75em;
-  line-height: 1.45;
+/* style for paragraph elements with class .item used for project descriptions*/
+.item p {
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: normal;
+  color: var(--ltModeNavBkg)
 }
+
+i {
+  font-size: 1.5rem;
+  color: #C0B283;
+}
+
+.float-container {
+  width: 100%;
+  padding-bottom: .25rem;
+}
+
+.float-child-1 {
+  width: 92%;
+  float: left;
+  padding-bottom: .25rem;
+
+}
+
+.float-child-2 {
+  width: 8%;
+  float: right;
+  padding-bottom: .25rem;
+}
+
+.float-child-1a {
+  width: 99%;
+  float: left;
+  padding-bottom: .25rem;
+
+}
+
+.float-child-2a {
+  width: 1%;
+  float: right;
+  padding-bottom: .25rem;
+}
+
 
 /*styles project images size, opacity, and box-shadow;*/
 
 img {
-  width: 90%;
+  width: 100%;
   height: auto;
-  opacity: .75;
+  opacity: 1;
+  border: 1px solid #C0B283;
+  border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: width 1s;
+}
+
+img:hover {
+  filter: none;
+  /* -webkit-filter: sepia(0); */
+  width: 110%;
+  height: auto;
 }
 
 /*style class for making the first image larger*/
 img.first {
-  width: 100%;
+  width: 110%;
+  margin-right: 3rem;
 }
 
-
-/*styles hover for project images*/
-img:hover {
-  opacity: 1;
-}
-
-#portrait {
-  max-width: 15%;
+/*style class for making the first image slightly larger upon hover*/
+img.first:hover {
+  filter: none;
+  /* -webkit-filter: grayscale(0); */
+  width: 115%;
   height: auto;
+}
+
+.about-me {
+  font-size: 4rem;
+  line-height: 5rem;
+  width: 60%;
+  text-align: center;
+  /* padding-top: .5em;
+  padding-bottom: .5em; */
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/*style id for my portrait*/
+#portrait {
+  max-width: 16%;
+  height: auto;
+  align-self: center;
   margin-top: 1em;
   margin-bottom: 1em;
   opacity: 1;
   margin-left: 42%;
   margin-right: 42%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 
+
+
 /* class used to style call to action statement "Let's work together", email, linkedin */
-.action {
-  font-size: 1.5em;
-  line-height: 3em;
-  width: 100%;
+.about-me {
+  font-size: 1.5rem;
+  line-height: normal;
+  color: #C0B283;
+  width: 60%;
   text-align: center;
   padding-top: .5em;
   padding-bottom: .5em;
 }
 
-.paraFormat {
-  font-size: 1em;
-  line-height: 1em;
+.about-me h2 {
+  font-size: 2rem;
+  line-height: normal;
+  color: #C0B283;
+  width: auto;
+  text-align: center;
   padding-top: .5em;
   padding-bottom: .5em;
-  margin: auto;
-  width: 45%;
 }
-
 
 
 /*styles the mail envelope for email link */
-.icon {
-  width: 50px;
-  opacity: 1;
+.envelope {
+  width: 55px;
+  /* text-align: center; */
+  margin: auto;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.top {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* link styling */
+.top a:link {
+  color: #C0B283;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.top a:visited {
+  color: #8d8787;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.top a:hover {
+  color: #e7d083;
+  ;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.top a:active {
+  color: #C0B283;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 /*footer styling */
-footer {
+footer p {
   text-align: center;
-  background-color: var(--ltModeColor2);
-  color: var(--ltModeColor1);
+  background-color: var(--ltModeBkGrd);
+  color: var(--ltModeNavBkg);
   margin: auto;
-  font-size: 1em;
+  font-size: 1.25rem;
+  padding-bottom: 3%;
 }
 
-/* Media queries to improve responsiveness*/
-/* from W3schools.com -  On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+
+
+/* Media queries to improve responsiveness */
+
+
+@media only screen and (min-width: 280px) and (max-width: 487px) {
   .topnav a {
-    float: none;
+    float: left;
     width: 100%;
+    font-size: 1em;
   }
-}
 
-@media screen and (min-width: 400px) {
-  body {
-    background-color: rgb(171, 205, 228);
+  li a {
+    display: block;
+    width: 60px;
+
   }
 
   header {
     padding: 2rem;
     text-align: center;
     background: none;
-    color: var(--ltModeColor1);
   }
 
   .name {
@@ -218,66 +413,158 @@ footer {
     font-size: 1em;
     padding-top: .25em;
   }
-}
 
-footer {
-  text-align: center;
-  background-color: rgb(171, 205, 228);
-  margin: auto;
-  font-size: 1em;
-}
-
-@media screen and (min-width: 600px) {
   body {
-    background-color: rgb(241, 214, 228);
+    /* background-color: aqua; */
+    font-size: 1em;
   }
 
+  .tcontainer {
+    display: none;
+  }
+
+  .about-me h2 {
+    font-size: 1.25rem;
+
+  }
+
+  /* style for h2 elements with class .item used for project titles*/
+  .item h2 {
+    font-size: 1rem;
+  }
+
+  /* style for paragraph elements with class .item used for project descriptions*/
+  .item p {
+    font-size: 1rem;
+    line-height: normal;
+
+  }
+
+  .about-me {
+    font-size: 1rem;
+    line-height: normal;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+
+  #portrait {
+    max-width: 40%;
+    height: auto;
+    align-self: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    opacity: 1;
+    margin-left: 30%;
+    margin-right: 30%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+
+  /* link styling */
+  .top a:link {
+    font-size: 1rem;
+    line-height: normal;
+    text-decoration: underline;
+  }
+
+  footer p {
+    font-size: .75rem;
+    padding-bottom: 1%;
+  }
+}
+
+@media only screen and (min-width: 488px) and (max-width:930px) {
+  .topnav {
+    background-color: var(--ltModeNavBkg);
+    overflow: hidden;
+  }
+  
+  /* Styles the links inside the navigation bar */
+  .topnav a {
+    /* float: left;
+    color: var(--ltModeBkGrd);
+    text-align: center;
+    padding: .5rem .9rem;
+    text-decoration: none; */
+    font-size: 1rem;
+  
+  }
+/* 
   header {
     padding: 2rem;
     text-align: center;
     background: none;
-    color: var(--ltModeColor1);
-  }
+  } */
 
   .name {
-    letter-spacing: .48em;
-    font-size: 2.43em;
+    letter-spacing: .325em;
+    font-size: 1.80em;
   }
 
   .modern {
-    letter-spacing: .375em;
-    font-size: 1.5em;
-    padding-top: .375em;
+    letter-spacing: .35em;
+    font-size: 1.25em;
+    padding-top: .25em;
   }
 
-  footer {
-    text-align: center;
-    background-color: rgb(241, 214, 228);
-    margin: auto;
+  body {
+    /* background-color: rgb(247, 0, 255); */
     font-size: 1em;
   }
 
-  @media screen and (min-width: 800px) {
-    body {
-      background-color: white;
-    }
+  .tcontainer {
+    display: none;
+  }
 
-    .name {
-      letter-spacing: .65em;
-      font-size: 3.25em;
-    }
+  .about-me h2 {
+    font-size: 1.25rem;
 
-    .modern {
-      letter-spacing: .5em;
-      font-size: 2em;
-      padding-top: .5em;
-    }
+  }
 
-    footer {
-      text-align: center;
-      background-color: white;
-      margin: auto;
-      font-size: 1em;
-    }
+  /* style for h2 elements with class .item used for project titles*/
+  .item h2 {
+    font-size: 1rem;
+  }
+
+  /* style for paragraph elements with class .item used for project descriptions*/
+  .item p {
+    font-size: 1rem;
+    line-height: normal;
+
+  }
+
+  .about-me {
+    font-size: 1rem;
+    line-height: normal;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+
+  #portrait {
+    max-width: 40%;
+    height: auto;
+    align-self: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    opacity: 1;
+    margin-left: 30%;
+    margin-right: 30%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+
+  /* link styling */
+  .top a:link {
+    font-size: 1rem;
+    line-height: normal;
+    text-decoration: underline;
+  }
+
+  footer p {
+    font-size: .75rem;
+    padding-bottom: 1%;
   }
 }
+

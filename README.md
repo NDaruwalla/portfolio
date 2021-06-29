@@ -1,16 +1,16 @@
 # Portfolio
 
-### Nicole Daruwalla - Website Designer/Developer
+### Nicole Daruwalla - Website Designer & Front-end Developer
 
 ## Description
 
-I developed a webpage for potential employers to sample the work I have created. I'll use the currently linked projects as placeholders until I have completed more advanced projects to showcase my skills. 
+I developed a webpage for potential employers to sample the work I have created. The projects included demonstrate my front-end and back-end web development skills. 
 
 ## Objective
  To obtain an interview with a potential employer.
 
 ## Skills Hightlighted
-HTML, CSS, flexbox, media queries, and CSS variables.  
+HTML, CSS, flexbox, media queries, JavaScript, Node JS andMySQL. 
 
 
 ## User Story
@@ -19,19 +19,17 @@ HTML, CSS, flexbox, media queries, and CSS variables.
 AS a potential employer/hiring manager
 I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
-
 ```
-## Wireframe
 
-A wireframe document was created in PowerPoint. See attached PDF.
+## Screen Captures
 
-## Screen Capture
-
-The following screen capture shows my web portfolio's appearance and functionality:
-![portfolio](./assets/images/portfoliopage.jpg)
+### Portfolio Homepage
+This screen capture shows my web portfolio's appearance and navigation
+![portfolio](./assets/images/portfolio.jpg)
 
 
-The following screen capture shows my resume page appearance:
+### Resume
+This screen capture shows the print function of the resume page.
 ![resume](./assets/images/resume.jpg)
 
 
@@ -45,7 +43,6 @@ The following screen capture shows my resume page appearance:
 * The page is responsive to various screens and devices and the layout adapts to various viewports
 * A favicon is displayed in the browser tab
 
-
 ## Deployed application
 
 The URL of the deployed application.
@@ -56,5 +53,11 @@ https://ndaruwalla.github.io/portfolio/
 The URL of the GitHub repository that contains my code.
 https://github.com/NDaruwalla/portfolio/
 
+## Questions
+If you have questions or need help with this application:
 
+Contact me on GitHub:
+[ndaruwalla](https://github.com/ndaruwalla)
+ 
+Or, via [Email](mailto:nicole.daruwalla@gmail.com)
 

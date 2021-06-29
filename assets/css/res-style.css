@@ -3,13 +3,14 @@
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: auto;
-  /* grid-template-rows: 0.15fr 0.15fr 0.5fr 0.5fr 0.15fr 0.15fr 0.15fr 0.15fr; */
+  /* grid-template-rows: 0.15fr 0.15fr 0.15fr 0.15fr 0.15fr 0.5fr 0.5fr 0.15fr 0.15fr 0.15fr 0.15fr; */
   box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
-  grid-gap: 1px;
+  grid-gap: 0px;
   grid-template-areas:
     "name name"
     "about about"
-    "technology skills"
+    "tools tools"
+     /* "technology skills" */
     "technology skills"
     "experience  experience"
     "education   education"
@@ -17,13 +18,38 @@
     "return  return";
 }
 
+a:link {
+  color: #C0B283;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #8d8787;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e7d083;;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #C0B283;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 body {
   font-size: 1rem;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
   color: rgb(34, 13, 13);
-  background-color: rgb(34, 13, 13);
+  background-color: #C0B283;;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .address {
@@ -36,9 +62,10 @@ body {
 
 .grid-area {
   padding: 0.5em 4em 1em 4em;
+  background-color:#f4f4f4;
 
-  border: 1px rgb(34, 13, 13);
-  background-color: rgb(252, 252, 252);
+  /* border: 1px rgb(34, 13, 13); */
+  
 }
 
 h1 {
@@ -61,6 +88,13 @@ h2 {
 .about {
   grid-area: about;
   font-size: 1.25rem;
+}
+
+.tools {
+  grid-area: tools;
+  border-bottom: 5px;
+  border-color: #373737;
+  
 }
 
 .projects {
@@ -95,11 +129,12 @@ h2 {
   grid-area: return;
   width: auto;
   text-align: center;
-  background-color: rgb(34, 13, 13)
+  background-color: #f4f4f4;
+  color: #f4f4f4;
 }
 
 .toTop a:link {
-  color: rgb(252, 252, 252);
+  color: #f4f4f4;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -109,8 +144,33 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+ background-color:#f4f4f4;
 }
 
 .learning {
   color: rgb(167, 167, 167);
+}
+
+.resumeBtn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  background-color: #373737;
+  color:  #f4f4f4;
+  margin: 2rem;
+  height: 2rem;
+  width: 8rem;
+  text-align: center;
+  border-radius: 7%;
+}
+
+.resumeBtn:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  background-color: #C0B283;
+  color:  rgb(252, 252, 252);
+  margin: 2rem;
+  height: 2rem;
+  width: 8rem;
+  text-align: center;
+  border-radius: 7%;
 }
